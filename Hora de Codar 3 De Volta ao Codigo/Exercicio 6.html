@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+<script>
+ let totalAlunosAprovados = 0;
+
+do {
+    let nota1 = parseFloat(prompt("Informe a primeira nota do aluno:"));
+    let nota2 = parseFloat(prompt("Informe a segunda nota do aluno:"));
+
+    let mediaFinal = (nota1 + nota2) / 2;
+    console.log("Média final:", mediaFinal);
+
+    if (mediaFinal >= 9.5) {
+        totalAlunosAprovados++;
+    }
+
+    let resposta = prompt("Calcular a média de outro aluno? (Sim/Não)").toUpperCase();
+} while (resposta === "S");
+
+console.log("Total de alunos aprovados:", totalAlunosAprovados);
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

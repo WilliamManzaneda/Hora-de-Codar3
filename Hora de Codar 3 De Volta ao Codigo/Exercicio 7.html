@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+<script>
+
+const numNotas = 6;
+let notas = [];
+let somaNotas = 0;
+
+for (let i = 0; i < numNotas; i++) {
+    let nota = parseFloat(prompt(`Informe a nota ${i + 1} (0 a 10):`));
+
+    while (nota < 0 || nota > 10 || isNaN(nota)) {
+        nota = parseFloat(prompt("Nota inválida. Informe novamente (0 a 10):"));
+    }
+
+    notas.push(nota);
+    somaNotas += nota;
+}
+
+let mediaAluno = somaNotas / numNotas;
+console.log("Média do aluno:", mediaAluno);
+
+
+
+
+</script>
+    
+</body>
+</html>
